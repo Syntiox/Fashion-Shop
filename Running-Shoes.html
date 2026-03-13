@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Shop - Running Shoes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo" onclick="window.location.href='index.html'" style="cursor:pointer;">Fashion Shop</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search in Store...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <a href="help.html" style="color: white; text-decoration: none; font-size: 16px; font-weight: bold;"><i class="fas fa-question-circle"></i> Help</a>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count" style="background:red; color:white; border-radius:50%; padding:2px 6px; font-size:12px; display:none; position:absolute; top:-5px; right:-10px;">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <button class="back-btn" onclick="window.location.href='index.html'"><i class="fas fa-arrow-left"></i> Back to Categories</button>
+        
+        <div class="section-header">
+            <h2>Running Shoes</h2>
+            <p style="color: #666; margin-top: 10px;">Explore our latest collection</p>
+        </div>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="image/Running-Shoes/1.jpg" alt="Product 1" onerror="this.src='https://placehold.co/400x400/f8f9fa/a8a29e?text=Image+1'">
+                <div class="card-details">
+                    <div class="p-name">Stylish Running Shoes 1</div>
+                    <div class="p-price">Rs. 2500.00</div>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="image/Running-Shoes/2.png" alt="Product 2" onerror="this.src='https://placehold.co/400x400/f8f9fa/a8a29e?text=Image+2'">
+                <div class="card-details">
+                    <div class="p-name">Premium Running Shoes 2</div>
+                    <div class="p-price">Rs. 3200.00</div>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="image/Running-Shoes/3.jpeg" alt="Product 3" onerror="this.src='https://placehold.co/400x400/f8f9fa/a8a29e?text=Image+3'">
+                <div class="card-details">
+                    <div class="p-name">Classic Running Shoes 3</div>
+                    <div class="p-price">Rs. 1800.00</div>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="image/Running-Shoes/4.jpg" alt="Product 4" onerror="this.src='https://placehold.co/400x400/f8f9fa/a8a29e?text=Image+4'">
+                <div class="card-details">
+                    <div class="p-name">Modern Running Shoes 4</div>
+                    <div class="p-price">Rs. 2100.00</div>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <p>Contact Us: <a href="tel:+94743852587">94743852587</a></p>
+    </footer>
+</body>
+</html>
